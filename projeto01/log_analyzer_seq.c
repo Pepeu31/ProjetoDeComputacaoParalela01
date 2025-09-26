@@ -32,7 +32,6 @@ int main () {
             if (i == 8 && strcmp(token, "404") == 0) {
                 count404++;
             }
-        
             else if(is200 == true) {
                 count200Bytes += atoi(token);
                 is200 = false;
