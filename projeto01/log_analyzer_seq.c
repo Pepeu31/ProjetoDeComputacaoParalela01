@@ -28,6 +28,7 @@ int main () {
     while((read = getline(&line, &len, fp)) != -1) {
         token = strtok(line, delimiter);
         i = 0;
+        is200 = false;  // Reset is200 para cada linha (processamento independente)
         while (token != NULL) {
             if (i == 8 && strcmp(token, "404") == 0) {
                 count404++;
