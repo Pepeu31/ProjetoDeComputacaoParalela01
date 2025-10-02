@@ -1,3 +1,5 @@
+//Francisco Losada Totaro - 103646673
+//Pedro Henrique L. Morrerias - 10441998
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
