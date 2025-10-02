@@ -10,7 +10,6 @@ int main () {
     int count404 = 0;
     bool is200 = false;
     long long count200Bytes = 0;
-    bool is404 = false;
     int i = 0;
     struct timespec start, end;
 
@@ -28,7 +27,7 @@ int main () {
     while((read = getline(&line, &len, fp)) != -1) {
         token = strtok(line, delimiter);
         i = 0;
-        is200 = false;  // Reset is200 para cada linha (processamento independente)
+        is200 = false;
         while (token != NULL) {
             if (i == 8 && strcmp(token, "404") == 0) {
                 count404++;
